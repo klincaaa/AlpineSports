@@ -1,0 +1,17 @@
+.clients {
+  padding: 5rem 1rem;
+  background-color: #f7f8fc;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .clients {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

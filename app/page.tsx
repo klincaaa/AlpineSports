@@ -1,65 +1,112 @@
+import styles from "./Home.module.css"
+import ProductCard from "./components/ProductCard";
+import skiSchoolImg from "@/public/images/alpine-sports-zermatt-hero-image.avif"
+import lessonsImg from "@/public/images/lessonsImg.jpg"
+import offPiste from "@/public/images/offPiste.jpg"
+import snowboardImg from "@/public/images/snowboardImg.jpg"
+import ClientsSection from "./components/ClientsSection";
 import Image from "next/image";
+import heroImage from "@/public/images/mainImage.webp";
+import BigCard from "./components/BigCard";
+import Head from "next/head";
+import Link from "next/link";
+
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      <Head>
+        <title>Alpine Sports Andermatt | Ski School & Private Ski Lessons </title>
+        <meta name="description" content="Alpine Sports Andermatt is a premium ski school dedicated to delivering a
+          simple, enjoyable, and expertly guided ski experience. With a professional
+          yet friendly approach, we specialize in private lessons and children’s group
+          lessons designed to maximize progress and confidence." />
+      </Head>
+
+      <div className={styles.home}>
+        {/* Background image */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={styles.bgImage}
+          // style={{ objectFit: "cover", width: "100%", height: "100%" }}
+        >
+          <source src="/videos/alpine-sports-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className={styles.overlay}></div>
+
+        <div className={styles.content}>
+          <h1>
+            Ski with <br />
+            Alpine Sports
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+          <p>Explore Andermatt mountains with us!</p>
+          <Link href="/book-now" className={styles.bookNow}>
+            Book now
+          </Link>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      <section className={styles.about}>
+        <h2>EXPLORE OUR
+          PRODUCTS</h2>
+
+        <div className={styles.grid}>
+          <ProductCard
+            image={skiSchoolImg}
+            label="Ski School"
+            href="/ski"
+          />
+          <ProductCard
+            image={lessonsImg}
+            label="Ski Lessons"
+            href="/ski/private-lessons"
+          />
+          <ProductCard
+            image={offPiste}
+            label="Off Piste"
+            href="/ski/off-piste"
+          />
+          <ProductCard
+            image={snowboardImg}
+            label="Snowboard"
+            href="/snowboard-lessons"
+          />
         </div>
-      </main>
-    </div>
+      </section>
+
+      <BigCard
+        text="Alpine Sports Andermatt is a premium ski school dedicated to delivering a
+          simple, enjoyable, and expertly guided ski experience. With a professional
+          yet friendly approach, we specialize in private lessons and children’s group
+          lessons designed to maximize progress and confidence.
+          Our experienced team knows Andermatt inside out and is committed to making
+          every ski day seamless, memorable, and perfectly tailored to you."
+      />
+
+      <section className={styles.cards}>
+        <ProductCard
+          image={skiSchoolImg}
+          label="Book Now"
+          href="/book-now"
+        />
+
+        <ProductCard
+          image={skiSchoolImg}
+          label="Contact Us"
+          href="/contact"
+        />
+      </section>
+
+      <section className={styles.clients}>
+        <ClientsSection />
+      </section>
+    </>
+
   );
 }

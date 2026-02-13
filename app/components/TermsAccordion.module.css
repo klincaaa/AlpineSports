@@ -1,0 +1,39 @@
+.accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header {
+  width: 100%;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.content {
+  padding-bottom: 1.5rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}

@@ -1,0 +1,47 @@
+.terms {
+  background-color: #ffffff;
+  padding: 0 1rem;
+  margin-top: 10rem;
+}
+
+.terms {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.header {
+  padding: 6rem 1.5rem 3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header h1 {
+  max-width: 900px;
+  margin: 0 auto;   
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 10rem;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Desktop breathing space */
+@media (min-width: 1024px) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.aboutText {
+  max-width: 720px;
+  margin: 0 1rem;
+  padding: 5rem  1rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: var(--main-color);
+}
+
+.aboutText h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.aboutText p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .aboutText {
+    text-align: left;
+  }
+
+  .aboutText h3 {
+    font-size: 2rem;
+  }
+
+  .aboutText p {
+    font-size: 1.05rem;
+  }
+}

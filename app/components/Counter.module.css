@@ -1,0 +1,18 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--main-color);
+  line-height: 1;
+}
+
+.label {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  color: #555;
+}

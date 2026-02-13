@@ -1,0 +1,134 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  padding: 0 1rem;
+}
+
+/* NEW */
+.bgImage {
+  object-fit: cover;
+  width: 100vw;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* dark overlay */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    /* on top of overlay */
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4.5rem;
+    text-align: left;
+    line-height: 1;
+}
+
+.content p {
+  padding: 1rem 0 ;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.bookNow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+
+  padding: 1rem 2rem;
+  border-radius: 1rem; 
+
+  background-color: #f4f4f495;
+  /* background-color: var(--main-color); */
+  color: var(--main-color);
+
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  border: none;
+  cursor: pointer;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.bookNow:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(17, 29, 68, 0.25);
+}
+
+.bookNow:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(17, 29, 68, 0.2);
+}
+
+.bookNow:focus-visible {
+  outline: 2px solid rgba(17, 29, 68, 0.6);
+  outline-offset: 3px;
+}
+
+
+.about {
+  padding: 5rem 1rem;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.about h2 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+
+  /* MOBILE DEFAULT: 2 columns */
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+
+
+
+/* DESKTOP: 4 columns in a row */
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+/* CARDS */
+
+.cards {
+  padding: 5rem 1rem;
+  display: grid;
+  gap: 1rem;
+}
+

@@ -1,0 +1,62 @@
+.gridItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none; /* remove underline */
+  color: inherit;
+}
+
+.gridItem img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gridItem:hover img {
+  transform: scale(1.05);
+}
+
+.label {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 0.4rem;
+  width: 60%;
+  background-color: #fff;
+  color: var(--main-color);
+  padding: 0.4rem 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  /* border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px; */
+  border-radius: 12px;
+}
+
+/* ProductCard.module.css */
+/* Animate from one corner to another using scale and translate */
+.fadeIn {
+  opacity: 1;
+  transform: scale(1) translate(0, 0);
+  transition: 
+    opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1), 
+    transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.fadeOut {
+  opacity: 0;
+  /* Start small and offset from top left corner */
+  transform: scale(0.7) translate(-40px, -40px);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .gridItem img {
+    height: 200px;
+  }
+}
