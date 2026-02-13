@@ -26,17 +26,17 @@ export const metadata = {
   description:
     "Premium ski school in Andermatt. Private lessons, group lessons, off-piste guiding.",
 
-  metadataBase: new URL("https://alpinesport.netlify.app"),
+  metadataBase: new URL("https://alpine-sports.vercel.app"),
 
   openGraph: {
     title: "Alpine Sports Andermatt",
     description:
       "Premium ski school in Andermatt. Private lessons, group lessons, off-piste guiding.",
-    url: "https://alpinesport.netlify.app",
+    url: "https://alpine-sports.vercel.app",
     siteName: "Alpine Sports Andermatt",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/mainImage.webp",
         width: 1200,
         height: 630,
       },
