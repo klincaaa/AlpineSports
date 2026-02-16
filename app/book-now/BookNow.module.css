@@ -69,7 +69,7 @@
   color: #fff;
   background-color: var(--main-color);
   border: none;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -82,4 +82,3 @@
 .submitButton:active {
   transform: translateY(0);
 }
-

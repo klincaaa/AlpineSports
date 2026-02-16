@@ -78,8 +78,9 @@
 }
 
 .bookNow:hover {
-  transform: translateY(-1px);
+  /* transform: translateY(-1px); */
   box-shadow: 0 8px 20px rgba(17, 29, 68, 0.25);
+  background-color: #d0d0d095;
 }
 
 .bookNow:active {
@@ -127,6 +128,10 @@
   padding: 0 1rem;
 }
 
+.clients {
+  padding: 0 1rem;
+}
+
 
 
 
@@ -162,10 +167,15 @@
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 5rem;
 
   }
 
   .bigcard {
-    padding: 5rem 1rem;
+    padding: 5rem 5rem;
+  }
+
+  .clients {
+    padding: 0 5rem;
   }
 }
