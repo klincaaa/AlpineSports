@@ -48,6 +48,34 @@ export const metadata = {
   icons: {
     icon: "images/favicon.ico",
   },
+
+  twitter: {
+    card: "summary_large_image", // or "summary"
+    title: "Alpine Sports Andermatt",
+    description:
+      "Premium ski school in Andermatt. Private lessons, group lessons, off-piste guiding.",
+    images: ["/images/mainImage.webp"],
+    site: "@YourTwitterHandle", // optional
+  },
+
+  robots: {
+    index: true,    // allow indexing
+    follow: true,   // allow links to be followed
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  authors: [{ name: "Alpine Sports", url: "https://alpine-sports.vercel.app" }],
+  keywords: ["ski school", "Andermatt", "private lessons", "off-piste guiding"],
+
+  
+
+
 };
 
 

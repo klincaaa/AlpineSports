@@ -79,7 +79,7 @@ export default function Home() {
           />
         </div>
       </section>
-
+      <div className={styles.bigcard}>
       <BigCard
         text="Alpine Sports Andermatt is a premium ski school dedicated to delivering a
           simple, enjoyable, and expertly guided ski experience. With a professional
@@ -88,6 +88,8 @@ export default function Home() {
           Our experienced team knows Andermatt inside out and is committed to making
           every ski day seamless, memorable, and perfectly tailored to you."
       />
+      </div>
+      
 
       <section className={styles.cards}>
         <ProductCard

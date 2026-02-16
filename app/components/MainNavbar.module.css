@@ -171,6 +171,17 @@
 }
 
 
+@media (min-width: 1024px) {
+
+  .menu-item a {
+    padding: 8px;
+  }
+  .menu-list {
+    width: 30%;
+  }
+}
+
+
 
 
 

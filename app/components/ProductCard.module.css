@@ -1,7 +1,7 @@
 .gridItem {
   position: relative;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -24,8 +24,8 @@
 
 .label {
   position: absolute;
-  bottom: 0.4rem;
-  left: 0.4rem;
+  bottom: 1rem;
+  left: 1rem;
   width: 60%;
   background-color: #fff;
   color: var(--main-color);
@@ -35,7 +35,7 @@
   text-align: center;
   /* border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px; */
-  border-radius: 12px;
+  border-radius: 9999px;
 }
 
 /* ProductCard.module.css */
@@ -57,6 +57,19 @@
 
 @media screen and (min-width: 1024px) {
   .gridItem img {
-    height: 200px;
+    /* height: 50vh; */
   }
+
+  .fadeOut {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .label {
+    padding: 0.8rem 0;
+  }
+
+  
+
 }
