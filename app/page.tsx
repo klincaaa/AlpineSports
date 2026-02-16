@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="description" content="Alpine Sports Andermatt is a premium ski school dedicated to delivering a
           simple, enjoyable, and expertly guided ski experience. With a professional
           yet friendly approach, we specialize in private lessons and children’s group
-          lessons designed to maximize progress and confidence." />
+          lessons designed to maximize progress and confidence" />
       </Head>
 
       <div className={styles.home}>
