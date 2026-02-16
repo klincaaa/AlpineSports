@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "Alpine Sports Andermatt",
     images: [
       {
-        url: "/images/mainImage.webp",
+        url: "https://alpine-sports.vercel.app/images/mainImage.webp",
         width: 1200,
         height: 630,
       },

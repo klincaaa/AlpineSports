@@ -137,6 +137,19 @@
     width: 100%;
   }
 
+  .content {
+    position: absolute;
+    left: 5rem;
+  }
+
+  .content h1 {
+    font-size: 7rem;
+  }
+
+  .content p {
+    font-size: 1.5rem;
+  }
+
   .about {
     padding: 5rem 5rem;
   }
