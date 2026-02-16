@@ -1,3 +1,4 @@
+import styles from "./Ski.module.css";
 import BigCard from "../components/BigCard";
 import HeroJustText from "../components/HeroJustText";
 
@@ -7,7 +8,7 @@ export default function Ski() {
             <HeroJustText
                 text="SKI LESSONS"
             />
-            <section className="mt-16">
+            <section className={styles.skiLessons}>
                 <BigCard
                     text="In the heart of the Swiss Alps, surrounded by the Alpine pass Gotthard, Furka and Oberalp, the SkiArena Andermatt-Sedrun offers a vast variety of skiing terrain for every ski level.
                         At Alpine Sports Andermatt, we love nothing more than to pass on our knowledge,

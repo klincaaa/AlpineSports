@@ -62,11 +62,15 @@ export default function MainNavbar() {
 
   return (
     <nav className={`${styles.menu} ${scrolled ? styles.scrolled : ""}`}>
-      <Image
-        src={alpineLogo}
-        alt="Alpine Sports Andermatt"
-        width={120}
-      />
+      <Link
+        href="/">
+        <Image
+          src={alpineLogo}
+          alt="Alpine Sports Andermatt"
+          width={120}
+        />
+      </Link>
+
 
       <button
         className={styles["menu-toggle"]}
@@ -94,6 +98,7 @@ export default function MainNavbar() {
               height: "60px",
               borderRadius: "50%",
               // padding: "0.2rem",
+              cursor: "pointer",
               border: "none",
               fontSize: "40px",
               display: open ? "block" : "none",
