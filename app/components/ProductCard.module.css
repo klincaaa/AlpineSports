@@ -56,9 +56,6 @@
 
 
 @media screen and (min-width: 1024px) {
-  .gridItem img {
-    /* height: 50vh; */
-  }
 
   .fadeOut {
     opacity: 1 !important;

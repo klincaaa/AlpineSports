@@ -59,7 +59,10 @@ export default function Footer() {
         <div className={styles.contact}>
           <h4 className={styles.title}>Contact</h4>
           <p>Andermatt, Switzerland</p>
-          <p>+41 00 000 0000</p>
+          <p>Alpine Sports Andermatt</p>
+          <p>Gotthardstrasse 63</p>
+          <p>6490 Andermatt</p>
+          <p>+41 78 875 2450</p>
           <p>info@alpinesportsandermatt.com</p>
         </div>
       </div>

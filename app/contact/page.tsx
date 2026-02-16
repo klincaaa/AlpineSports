@@ -68,6 +68,9 @@ export default function Contact() {
 
                         <p className={styles.infoItem}>
                             📍 Andermatt, Switzerland
+                            Gotthardstrasse 63
+                            <br />
+                            6490 Andermatt
                         </p>
                         <p className={styles.infoItem}>
                             📞 +41 00 000 0000
