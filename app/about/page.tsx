@@ -19,7 +19,9 @@ export default function About() {
                 />
             <section className={styles.about}>
                 
-                <BigCard text='About us' />
+                <BigCard text='The premier ski school Alpine Sports Andermatt has experienced and certified ski instructors with qualifications across many countries. This allows us to teach the best styles available internationally. Our instructors combine their passion for teaching with patience, fun and a wealth of experience.
+
+We are proud to provide personalized service, individually tailored to your needs and skills. We love what we do and can’t wait to offer you a memorable and exhilarating experience.' />
             </section>
         </>
     )

@@ -34,7 +34,7 @@
     position: relative;
     z-index: 2;
     /* on top of overlay */
-    text-align: left;
+    text-align: center;
 }
 
 .team h1{

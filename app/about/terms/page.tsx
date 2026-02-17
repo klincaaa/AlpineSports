@@ -1,5 +1,6 @@
 import TermsAccordion from "@/app/components/TermsAccordion";
 import styles from "./Terms.module.css";
+import HeroJustText from "@/app/components/HeroJustText";
 
 export default function Terms() {
   const terms = [
@@ -31,9 +32,15 @@ export default function Terms() {
   ];
 
   return (
+    <>
+    
+    <HeroJustText 
+      text="GENERAL BUSINESS TERMS AND CONDITIONS OF ALPINE SPORTS"
+    />
     <section className={styles.terms}>
-      <h1>GENERAL BUSINESS TERMS AND CONDITIONS OF ALPINE SPORTS</h1>
       <TermsAccordion items={terms} />
     </section>
+    </>
+    
   );
 }

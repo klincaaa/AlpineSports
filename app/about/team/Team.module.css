@@ -1,3 +1,9 @@
 .teamDes {
     padding: 5rem 0;
 }
+
+@media (min-width: 1024px) {
+    .teamDes {
+        padding: 5rem;
+    }
+}
