@@ -152,9 +152,8 @@ export default function BookNow() {
               onChange={handleChange}
             >
               <option value="">Select</option>
-              <option value="private">Private</option>
-              <option value="group">Group</option>
-              <option value="kids">Children</option>
+              <option value="ski">Ski</option>
+              <option value="cross-country">Cross Country</option>
             </select>
           </div>
 
@@ -171,7 +170,7 @@ export default function BookNow() {
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
-              <option value="More">More</option>
+              <option value="more">More</option>
             </select>
           </div>
 
@@ -185,11 +184,29 @@ export default function BookNow() {
               onChange={handleChange}
             >
               <option value="">Select</option>
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
+              <option value="first">First time ever</option>
+              <option value="beginner">Beginner (snow-plow)</option>
+              <option value="intermediate">Intermediate (parallel)</option>
+              <option value="advanced">Advanced (Short turns, carving)</option>
             </select>
           </div>
+
+          <div className={styles.field}>
+            <label className={styles.label}>Number of Instructors</label>
+            <select
+              className={styles.select}
+              name="instructors"
+              value={formData.instructors}
+              onChange={handleChange}
+            >
+              <option value="">Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="more">More</option>
+            </select>
+          </div>
+          
 
           {/* Message */}
           <div className={styles.field}>

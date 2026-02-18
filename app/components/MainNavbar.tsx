@@ -115,38 +115,7 @@ export default function MainNavbar() {
           <Link href="/" onClick={() => setOpen(false)}>HOME</Link>
         </li>
 
-        {/* ABOUT */}
-        <li className={`${styles["menu-item"]} ${styles["has-children"]}`}>
-          <button
-            className={styles["menu-link"]}
-            onClick={() => toggleDropdown("about")}
-          >
-            ABOUT
-            <span className={styles.arrow}>{openDropdown === "about" ? "−" : "+"}</span>
-          </button>
-
-
-          <ul
-            className={`${styles["sub-menu"]} ${openDropdown === "about" ? styles.open : ""
-              }`}
-          >
-            <li className={styles["sub-menu-item"]}>
-              <Link href="/about" onClick={() => setOpen(false)}>
-                About Us
-              </Link>
-            </li>
-            <li className={styles["sub-menu-item"]}>
-              <Link href="/about/team" onClick={() => setOpen(false)}>
-                The Team
-              </Link>
-            </li>
-            <li className={styles["sub-menu-item"]}>
-              <Link href="/about/terms" onClick={() => setOpen(false)}>
-                Terms & Conditions
-              </Link>
-            </li>
-          </ul>
-        </li>
+        
 
         {/* SKI */}
         <li className={`${styles["menu-item"]} ${styles["has-children"]}`}>
@@ -180,6 +149,39 @@ export default function MainNavbar() {
             <li className={styles["sub-menu-item"]}>
               <Link href="/ski" onClick={() => setOpen(false)}>
                 About Ski Lessons
+              </Link>
+            </li>
+          </ul>
+        </li>
+
+        {/* ABOUT */}
+        <li className={`${styles["menu-item"]} ${styles["has-children"]}`}>
+          <button
+            className={styles["menu-link"]}
+            onClick={() => toggleDropdown("about")}
+          >
+            ABOUT
+            <span className={styles.arrow}>{openDropdown === "about" ? "−" : "+"}</span>
+          </button>
+
+
+          <ul
+            className={`${styles["sub-menu"]} ${openDropdown === "about" ? styles.open : ""
+              }`}
+          >
+            <li className={styles["sub-menu-item"]}>
+              <Link href="/about" onClick={() => setOpen(false)}>
+                About Us
+              </Link>
+            </li>
+            <li className={styles["sub-menu-item"]}>
+              <Link href="/about/team" onClick={() => setOpen(false)}>
+                The Team
+              </Link>
+            </li>
+            <li className={styles["sub-menu-item"]}>
+              <Link href="/about/terms" onClick={() => setOpen(false)}>
+                Terms & Conditions
               </Link>
             </li>
           </ul>

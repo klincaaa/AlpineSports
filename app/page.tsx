@@ -32,7 +32,7 @@ export default function Home() {
           muted
           playsInline
           className={styles.bgImage}
-          // style={{ objectFit: "cover", width: "100%", height: "100%" }}
+        // style={{ objectFit: "cover", width: "100%", height: "100%" }}
         >
           <source src="/videos/alpine-sports-bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -80,16 +80,16 @@ export default function Home() {
         </div>
       </section>
       <div className={styles.bigcard}>
-      <BigCard
-        text="Alpine Sports Andermatt is a premium ski school dedicated to delivering a
+        <BigCard
+          text="Alpine Sports Andermatt is a premium ski school dedicated to delivering a
           simple, enjoyable, and expertly guided ski experience. With a professional
           yet friendly approach, we specialize in private lessons and children’s group
           lessons designed to maximize progress and confidence.
           Our experienced team knows Andermatt inside out and is committed to making
           every ski day seamless, memorable, and perfectly tailored to you."
-      />
+        />
       </div>
-      
+
 
       <section className={styles.cards}>
         <ProductCard
@@ -103,6 +103,18 @@ export default function Home() {
           label="Contact Us"
           href="/contact"
         />
+
+        {/* <ProductCard
+          image={skiSchoolImg}
+          label="The Team"
+          href="/about/team"
+        />
+
+        <ProductCard
+          image={skiSchoolImg}
+          label="About Us"
+          href="/about"
+        /> */}
       </section>
 
       <section className={styles.clients}>

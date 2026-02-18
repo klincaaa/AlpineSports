@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styles from "./Contact.module.css";
 import HeroJustText from "../components/HeroJustText";
+import SocialIcons from "../components/SocialIcons";
 
 // Change this to your email sending endpoint
 const FORM_ENDPOINT = "/api/contact"; // You must implement the /api/contact endpoint in your project (using Next.js API routes or a service like Formspree, EmailJS, etc)
@@ -56,9 +57,11 @@ export default function Contact() {
             />
             <section className={styles.contactSection}>
                 <header className={styles.header}>
-                    <p className={styles.subtitle}>
-                        Have a question? We’d love to hear from you.
-                    </p>
+                    <h2 className={styles.subtitle}>
+                        Have a question?
+                        <br />
+                        We’d love to hear from you.
+                    </h2>
                 </header>
 
                 <div className={styles.wrapper}>
@@ -67,17 +70,17 @@ export default function Contact() {
                         <h2 className={styles.infoTitle}>Alpine Sports Andermatt</h2>
 
                         <p className={styles.infoItem}>
-                            📍 Andermatt, Switzerland
-                            Gotthardstrasse 63
+                            Andermatt 6490, Switzerland
                             <br />
-                            6490 Andermatt
+                            Gotthardstrasse 63
                         </p>
                         <p className={styles.infoItem}>
-                            📞 +41 00 000 0000
+                            +41 00 000 0000
                         </p>
                         <p className={styles.infoItem}>
-                            ✉️ info@alpinesportsandermatt.com
+                            info@alpinesportsandermatt.com
                         </p>
+                        {/* <SocialIcons /> */}
                     </div>
 
                     {/* Form */}
