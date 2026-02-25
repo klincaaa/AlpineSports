@@ -13,6 +13,10 @@
   --main-color-transparent: #111D4480;
 }
 
+html {
+  font-size: 100%;
+}
+
 
 
 body {
